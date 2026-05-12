@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Sen Memory Game - Phase 1</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="hero">
+      <h1>Sen Memory Game</h1>
+      <p>Phase 1 : mise en place du plateau de jeu et des cartes.</p>
+    </header>
+
+    <section class="game-panel">
+      <div class="info-bar">
+        <div>
+          <span class="label">Phase</span>
+          <strong>Game Board Setup</strong>
+        </div>
+
+        <div>
+          <span class="label">Cartes</span>
+          <strong id="cardCount">0</strong>
+        </div>
+
+        <div>
+          <span class="label">Statut</span>
+          <strong id="statusText">En préparation</strong>
+        </div>
+      </div>
+
+      <div id="gameBoard" class="game-board"></div>
+
+      <div class="actions">
+        <button id="restartBtn">Recommencer</button>
+        <button id="testWinBtn" class="secondary-btn">Tester fin de partie</button>
+      </div>
+
+      <p id="message" class="message" hidden></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
