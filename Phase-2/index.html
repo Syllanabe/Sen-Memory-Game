@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Sen Memory Game - Phase 2</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="hero">
+      <h1>Sen Memory Game</h1>
+      <p>Phase 2 : retournement des cartes et détection des paires.</p>
+    </header>
+
+    <section class="game-panel">
+      <div class="info-bar">
+        <div>
+          <span class="label">Phase</span>
+          <strong>Card Flipping</strong>
+        </div>
+
+        <div>
+          <span class="label">Paires trouvées</span>
+          <strong id="matchesCount">0</strong>
+        </div>
+
+        <div>
+          <span class="label">Statut</span>
+          <strong id="statusText">Cliquez sur une carte</strong>
+        </div>
+      </div>
+
+      <div id="gameBoard" class="game-board"></div>
+
+      <div class="actions">
+        <button id="restartBtn">Recommencer</button>
+      </div>
+
+      <p id="message" class="message" hidden></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
